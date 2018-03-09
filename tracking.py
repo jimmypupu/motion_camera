@@ -1,4 +1,4 @@
-from picamera import PiCamera
+﻿from picamera import PiCamera
 #import RPi.GPIO as GPIO
 from picamera.array import PiRGBArray
 from collections import deque
@@ -8,6 +8,12 @@ import imutils
 import cv2
 from utils import WebcamVideoStream, FPS
 from servo_control2 import Servo
+
+#
+#   Thanks to
+#   https://www.intorobotics.com/how-to-detect-and-track-object-with-opencv/
+#   https://www.pyimagesearch.com/2015/09/21/opencv-track-object-movement/ 
+#
 
 (major_ver, minor_ver, subminor_ver) = (cv2.__version__).split('.')
 

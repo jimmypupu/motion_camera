@@ -1,16 +1,18 @@
 from picamera import PiCamera
 import sys
 sys.path.insert(0, '../')
-#sys.path.insert(0, '/tmp/tensorflow_pkg/')
 from picamera.array import PiRGBArray
 from collections import deque
 from time import sleep
-#from imutils.video import VideoStream
-#import imutils
 import cv2
 from utils import WebcamVideoStream, FPS
 from servo_control2 import Servo
 import YOLO_tiny_tf
+
+#
+#   Thanks to YOLO_tensorflow version
+#   https://www.pyimagesearch.com/2015/09/21/opencv-track-object-movement/
+#
 
 #@profile
 def main():
